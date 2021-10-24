@@ -1,13 +1,21 @@
 import React from 'react';
+import { Text } from 'react-native';
 
-import { Wrapper, Info } from './main.style';
+import useMain from './main.use';
+import { Wrapper, Spacer, Info, Website } from './main.style';
 
 const MainScreen: React.FC = () => {
+  const { openLink } = useMain();
+
   return (
     <Wrapper>
-      <Info>Build by Matt Oliveira. You can find me at https://mattdeveloper.com.</Info>
+      <Info>
+        <Text>build by Matt Oliveira - you can find me at</Text>
+        <Spacer />
+        <Website onPress={openLink}> https://mattdeveloper.com </Website>
+      </Info>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default MainScreen;
