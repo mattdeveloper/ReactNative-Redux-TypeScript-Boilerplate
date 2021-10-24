@@ -16,6 +16,7 @@ export const store = createStore(
     : ReduxDevTools.composeWithDevTools(applyMiddleware(...middleware))
 );
 
+// @ts-ignore
 export const persistor = persistStore(store);
 
 export interface IReduxState {
