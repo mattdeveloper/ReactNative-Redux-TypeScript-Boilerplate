@@ -14,6 +14,10 @@ const MainScreen: React.FC = () => {
         <Spacer />
         <Website onPress={openLink}> https://mattdeveloper.com </Website>
       </Info>
+
+      <Info mt>
+        <Info>Swipe right to open drawer.</Info>
+      </Info>
     </Wrapper>
   );
 };
