@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import useMain from './main.use';
 import { Wrapper, Spacer, Info, Website } from './main.style';
@@ -16,7 +17,8 @@ const MainScreen: React.FC = () => {
       </Info>
 
       <Info mt>
-        <Info>Swipe right to open drawer.</Info>
+        <Icon name="arrow-forward-outline" size={14} />
+        <Text> swipe right to open drawer.</Text>
       </Info>
     </Wrapper>
   );
